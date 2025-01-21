@@ -73,6 +73,9 @@ main{
     max-width: 1440px;
     margin: 0 auto;
 }
+header{
+    margin: 20px 20px;
+}
 
   /* navbar styles */
   #nav-btn-color{
@@ -92,10 +95,12 @@ main{
     text-decoration: none;
     font-weight: 700;
 }
-.navbar, .banner{
+.navbar, .banner,
+.footer{
     max-width: 1440px;
     margin: 10px auto;
 }
+
 /* banner related styles */
 
 .banner{
@@ -200,6 +205,110 @@ main{
     
 }
 
+/* our stories section style */
+
+.our-stories{
+    background-size: 100%;
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    
+
+}
+.our-stories-title{
+    margin: 50px auto;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.story-container img{
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+.story-container{
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    border: 2px solid red;
+}
+.story{
+    border-radius: 12px;
+    background-color: white;
+    border: 2px solid red;
+   
+}
+#full-story{
+    grid-row: span 2;
+}
+.story-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 20px;
+}
+.story-description{
+    margin: 0px auto;
+    padding: 20px;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.story-btn{
+    margin-top: -70px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Raleway;
+    color: white;
+    border-radius: 40px;
+    background-color: #3CD8E8;
+    padding: 20px;
+}
+.view-btn{
+    text-align: center;
+}
+#btn-color-black{
+    background-color: #111111;
+    margin: 50px auto;
+}
+
+/* footer section styles */
+
+.footer{
+    background-color: #01ACFD;
+    color: white;
+}
+.footer-container{
+    border: 2px solid salmon;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-items{
+    border: 2px solid rgb(15, 147, 26);
+    width: 55vh;
+    height: 50vh;
+    text-align: left;
+    justify-items: left;
+    padding: 30px 20px;
+}
+
+#footer-icon-img{
+    height: 120px;
+}
+.footer-item-title{
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.footer-header{
+    gap: 20px;
+    
+}
+.footer-item-desc{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
 /* responsive media query */
 
 @media screen and (max-width: 576px) {
@@ -221,5 +330,13 @@ main{
     }
     .icon{
         display: none;
+    }
+    .story-1{
+        display: none;
+    }
+    .story-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
+        gap: 5px;
     }
 }
