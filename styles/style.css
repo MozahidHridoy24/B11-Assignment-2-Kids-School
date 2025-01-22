@@ -18,7 +18,6 @@
     color: #FEA301;
     font-size: 1.25rem;
     font-weight: 500;
-    position: absolute;
   }
   .hide,
   .hr{
@@ -56,6 +55,7 @@
     font-weight: 500;
 }
 .btn-primary{
+    margin-top: 10px;
     padding: 10px 20px;
     color: white;
     background-color: #111111;
@@ -130,6 +130,7 @@ header{
 }
 
 .banner-content{
+    width: 100%;
     margin: auto;
     text-align: left;
     align-items: center;
@@ -155,7 +156,7 @@ header{
 /* Curriculum section styles */
 
 .standard-curriculum{
-    margin: 50px auto;
+    margin: 50px 20px;
     background-image: url(../assets/bg.png);
 }
 .Curriculum-title{
@@ -246,11 +247,11 @@ header{
     border-radius: 12px 12px 0px 0px;
 }
 .story-container{
-    margin: 50px 100px;
+    margin: 50px 50px;
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
 }
 .story{
@@ -292,6 +293,10 @@ header{
     background-color: #111111;
     margin: 50px auto;
 }
+.date-btn{
+    position: absolute;
+    margin-top: -15px;
+}
 
 /* footer section styles */
 
@@ -303,7 +308,7 @@ header{
 .footer-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    justify-items: center;
+    justify-items: stretch;
     gap: 10px;
 }
 .footer-items{
@@ -388,4 +393,7 @@ header{
         width: 100%;
         background-color: #FEA301;
     }
+    /* body{
+        overflow-x: hidden;
+    } */
 }
