@@ -275,7 +275,7 @@ header{
     font-weight: 500;
 }
 .story-btn{
-    margin-top: -120px;
+    /* margin-top: -120px; */
     margin-left: 10px;
     font-size: 1.25rem;
     font-weight: 500;
@@ -283,19 +283,20 @@ header{
     color: white;
     border-radius: 40px;
     background-color: #3CD8E8;
-    padding: 10px;
+    padding: 10px 5px;
     border: none;
 }
+.date-btn{
+    margin-top: -20px;
+    padding: 0 auto;
+}
+
 .view-btn{
     text-align: center;
 }
 #btn-color-black{
     background-color: #111111;
     margin: 50px auto;
-}
-.date-btn{
-    position: absolute;
-    margin-top: -15px;
 }
 
 /* footer section styles */
